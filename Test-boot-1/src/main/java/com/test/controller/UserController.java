@@ -24,7 +24,7 @@ public class UserController<T> {
 	@Autowired
 	private UserService service;
 	
-	@PostMapping("/register")//lllll
+	@PostMapping("/register")
 	public ResponseEntity<?> saveUser(@RequestBody User user){
 		APiStatus status = service.addUser(user);
 		return (status.getStatus().equals(ResponseMessage.SUCCESS))? 
