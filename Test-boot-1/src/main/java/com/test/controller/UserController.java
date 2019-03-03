@@ -19,7 +19,7 @@ import com.test.utill.ResponseMessage;
 
 @RestController
 @RequestMapping("/api/user")
-public class UserController<T> {
+public class UserController {
 
 	@Autowired
 	private UserService service;
